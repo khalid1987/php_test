@@ -1,0 +1,360 @@
+	*{
+	/*Get rid of default padding and margin*/
+		margin:0px;
+		padding:0px;
+		list-style-type:none; /*to remove points from lists items*/
+		font-family: Greta_Arabic;
+		font: black;
+	}
+
+	body {
+		background-image: url(images/backs/horror4.jpg);
+		background-attachment: fixed;
+		background-repeat:no-repeat;
+		background-color: black;
+	}
+
+	header,section,aside,footer,nav,article {
+		display:block; /*To consider these elements as blocks*/
+	}
+
+	/* Centering website */
+
+	.container {
+		width: 1000px;
+		margin: 0px auto;
+	}
+
+	.clear {
+		clear:both;
+	}
+
+	.top_page{
+		float:right;
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: contain;
+		background-color: black;
+		background-image: url(images/glitchs/glitch20.gif);
+		border: 0px solid black;
+		border-radius:5px;
+		height: 140px;
+		width: 1000px;
+		position:fixed;
+		top:0px;
+		/* background-color: #8b0000; */
+	}
+
+	.logo { /* class for the tag <img> */
+		width:330px;
+		height:175px;
+	}
+
+	.top_nav {
+		width:670px; /*the total width (1000) - the logo width (330)*/
+		float:right;
+	}
+
+	.top_nav ul li {
+		float:left;
+		padding:80px 18px;
+		font-size: 16px;
+	}
+
+	.left_side { /*The section*/
+		float:right;
+		width:700px;
+	}
+
+	.right_side {
+		float:right;
+		width:300px;
+	}
+
+	.left_side article {
+		border: 0px solid white;
+		/* #ddccee */
+		border-radius:5px;
+		margin:10px 30px 0px 0px; /*top left bottom right*/
+		padding:10px;
+	}
+
+	.right_side div {
+		border: 1px inset grey;
+		border-right: 0px;
+		border-top: 0px;
+		border-radius:5px;
+		margin:10px 0px 10px 0px; /*top left bottom right*/
+		padding:10px;
+	}
+
+	.page_footer p {
+		clear:both; /*Make footer clear floated elements*/
+		text-align: center;
+		font: white;
+		font-size: 16px;
+	}
+
+	p {
+		text-align:justify;
+		font-size: 22px;
+		color: white;
+	}
+
+	h2 {
+		color:yellow;
+		font-weight: normal;
+		font-family: sulimany;
+		font-size: 30px;
+	}
+
+	h4 {
+		text-align:justify;
+		font-weight: normal;
+	}
+
+	h3 {
+		color:#21ded3;
+		font-weight: normal;
+		font-size: 20px;
+	}
+
+	a {
+		text-decoration:none;
+		color: white;
+		font-size:20px;
+	}
+
+	a:hover {
+		color:red;
+		font-size:22px;
+	}
+
+	a:active {
+		color:yellow;
+	}
+
+.colored {
+	background-color: #e6f1fa;
+}
+
+.space {
+	height: 200px;
+}
+
+.picture_class {
+	border-radius:3px;
+	border: 0px solid black;
+}
+
+.disabled_link {
+	 pointer-events: none;
+   cursor: default;
+	 color: grey;
+}
+
+.journal_class {
+	text-align: justify;
+	color: #feffbc;
+	font-size: 28px;
+	font-family: Arslan_a;
+}
+
+@font-face {
+	font-family: 'Greta_Arabic';
+	src: url('fonts/GretaArabic-Regular_1.ttf');
+
+}
+
+@font-face {
+	font-family: 'sulimany';
+	src: url('fonts/sulimany_0.ttf');
+}
+
+@font-face {
+	font-family: 'Arslan_a';
+	src: url('fonts/A-Arslan-Wessam-A_1.ttf');
+}
+
+.blink {
+    animation-duration: 1s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2, start);
+}
+
+@keyframes blink {
+    80% { visibility: hidden; }
+}
+
+#image_changing:hover {
+   background-image: url('images/glitchs/glitch4.gif');
+	 background-repeat: no-repeat;
+	 background-position: left;
+	 background-size: 300px;
+}
+
+/* Glitch effect on text */
+
+.example-one {
+  font-size: 40px;
+  color: yellow;
+  position: relative;
+}
+@keyframes example-one-anim-1 {
+  0% {
+    clip: rect(40px, 450px, 82px, 0);
+  }
+  5.88235% {
+    clip: rect(96px, 450px, 115px, 0);
+  }
+  11.76471% {
+    clip: rect(63px, 450px, 41px, 0);
+  }
+  17.64706% {
+    clip: rect(106px, 450px, 29px, 0);
+  }
+  23.52941% {
+    clip: rect(106px, 450px, 101px, 0);
+  }
+  29.41176% {
+    clip: rect(17px, 450px, 33px, 0);
+  }
+  35.29412% {
+    clip: rect(64px, 450px, 112px, 0);
+  }
+  41.17647% {
+    clip: rect(111px, 450px, 52px, 0);
+  }
+  47.05882% {
+    clip: rect(27px, 450px, 27px, 0);
+  }
+  52.94118% {
+    clip: rect(110px, 450px, 79px, 0);
+  }
+  58.82353% {
+    clip: rect(75px, 450px, 41px, 0);
+  }
+  64.70588% {
+    clip: rect(115px, 450px, 59px, 0);
+  }
+  70.58824% {
+    clip: rect(63px, 450px, 101px, 0);
+  }
+  76.47059% {
+    clip: rect(51px, 450px, 53px, 0);
+  }
+  82.35294% {
+    clip: rect(73px, 450px, 10px, 0);
+  }
+  88.23529% {
+    clip: rect(77px, 450px, 55px, 0);
+  }
+  94.11765% {
+    clip: rect(72px, 450px, 88px, 0);
+  }
+  100% {
+    clip: rect(21px, 450px, 42px, 0);
+  }
+}
+@keyframes example-one-anim-2 {
+  0% {
+    clip: rect(38px, 450px, 34px, 0);
+  }
+  5.88235% {
+    clip: rect(96px, 450px, 16px, 0);
+  }
+  11.76471% {
+    clip: rect(77px, 450px, 53px, 0);
+  }
+  17.64706% {
+    clip: rect(35px, 450px, 85px, 0);
+  }
+  23.52941% {
+    clip: rect(52px, 450px, 79px, 0);
+  }
+  29.41176% {
+    clip: rect(30px, 450px, 15px, 0);
+  }
+  35.29412% {
+    clip: rect(88px, 450px, 97px, 0);
+  }
+  41.17647% {
+    clip: rect(12px, 450px, 57px, 0);
+  }
+  47.05882% {
+    clip: rect(114px, 450px, 49px, 0);
+  }
+  52.94118% {
+    clip: rect(71px, 450px, 101px, 0);
+  }
+  58.82353% {
+    clip: rect(92px, 450px, 70px, 0);
+  }
+  64.70588% {
+    clip: rect(70px, 450px, 24px, 0);
+  }
+  70.58824% {
+    clip: rect(79px, 450px, 13px, 0);
+  }
+  76.47059% {
+    clip: rect(106px, 450px, 37px, 0);
+  }
+  82.35294% {
+    clip: rect(88px, 450px, 114px, 0);
+  }
+  88.23529% {
+    clip: rect(51px, 450px, 31px, 0);
+  }
+  94.11765% {
+    clip: rect(90px, 450px, 5px, 0);
+  }
+  100% {
+    clip: rect(62px, 450px, 94px, 0);
+  }
+}
+.example-one:before, .example-one:after {
+  content: attr(data-text);
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  clip: rect(0, 0, 0, 0);
+}
+.example-one:after {
+  left: 2px;
+  text-shadow: -1px 0 red;
+  animation: example-one-anim-1 2s infinite linear alternate-reverse;
+}
+.example-one:before {
+  left: -2px;
+  text-shadow: 2px 0 blue;
+  animation: example-one-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+fieldset {
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	padding: 5px;
+}
+
+fieldset legend {
+	font-size: 18px;
+	color: yellow;
+}
+
+.personal_info label {
+	float:left;
+	width: 10px;
+}
+
+.button_style input {
+	color: white;
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	background-color:black;
+}
